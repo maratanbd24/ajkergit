@@ -1,0 +1,64 @@
+* {
+    font-family:cursive;
+
+}
+
+header{
+    background-color: hwb(13 64% 6%);
+    padding: 50px 240px;
+
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+.banner-tittle{
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(46, 26, 26);
+}
+.banner-description{
+    color:black ;
+
+}
+
+.btn-primary{
+    color:#292904;
+    background-color:yellowgreen;
+
+}
+
+
+.nav-tittle{
+
+    font-size: 6mm;
+    font-weight: 900;
+    color:#2f0e0e ;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: #2f0e0e;
+}
