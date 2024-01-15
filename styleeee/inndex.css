@@ -20,8 +20,8 @@ header{
     font-weight: 800;
     color: rgb(46, 26, 26);
 }
-.banner-description{
-    color:black ;
+.text-light-gray{
+    color:gray ;
 
 }
 
@@ -75,40 +75,13 @@ nav li a{
 
 }
 
-/* responsive media query */
-/* mobile devices */
-
-@media screen and (max-width:576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-
-
-/* tablet or medium devices */
-
-@media screen and (min-width:576px) and (max-width:992px) {
-    header{
-        padding: 50px;
-    }
-    
-    
-    nav{
-       
-        flex-direction: column;
-        
-    }
-}
 
 
 /*  main styles */
 
 main{
     max-width: 1440px
-    margin:0 auto ;
+    margin:70px auto ;
 }
 
 
@@ -118,6 +91,9 @@ main{
 .teams-container{
     display: flex;
     align-items: center;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding: 50px 220px;
 }
 
 .teams-img-container{
@@ -137,4 +113,77 @@ main{
 
 .teams-tittle{
     font-size: 3rem;
+}
+
+/* facts section */
+
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.facts-card-container .card{
+    border-radius: 10px;
+    border: 1px solid yellowgreen;
+    text-align: center;
+    padding: 30px 30px;
+    
+
+}
+
+.facts-card-container .card-tittle{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+
+}
+
+.facts-card-container .card-stats{
+    font-size: 3rem;
+    color: #FF900E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+      
+
+}
+
+
+
+
+/* responsive media query */
+/* mobile devices */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    .teams-container
+    {
+        flex-direction:column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* tablet or medium devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    
+    
+    nav{
+       
+        flex-direction: column;
+        
+    }
 }
